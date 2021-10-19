@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.usa.reto3.reto3.model;
-import com.usa.reto3.reto3.model.Message;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.io.Serializable;
@@ -37,7 +36,7 @@ public class Client implements Serializable {
 
     @OneToMany(cascade = {CascadeType.PERSIST},mappedBy="client")
     @JsonIgnoreProperties("client")
-    public List<Reservation>reservaciones; 
+    public List<Reservation> reservations;
 
     public Integer getIdClient() {
         return idClient;
@@ -87,12 +86,12 @@ public class Client implements Serializable {
         this.messages = messages;
     }
 
-    public List<Reservation> getReservaciones() {
-        return reservaciones;
+    public List<Reservation> getReservations() {
+        return reservations;
     }
 
-    public void setReservaciones(List<Reservation> reservaciones) {
-        this.reservaciones = reservaciones;
+    public void setReservations(List<Reservation> reservations) {
+        this.reservations = reservations;
     }
     
 }
