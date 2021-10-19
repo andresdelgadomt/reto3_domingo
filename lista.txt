@@ -1,0 +1,160 @@
+Listado de rutas de carpetas
+El n£mero de serie del volumen es 9A46-7063
+C:.
+|   .gitignore
+|   HELP.md
+|   lista.txt
+|   mvnw
+|   mvnw.cmd
+|   pom.xml
+|   
++---.idea
+|       .gitignore
+|       compiler.xml
+|       encodings.xml
+|       jarRepositories.xml
+|       misc.xml
+|       runConfigurations.xml
+|       uiDesigner.xml
+|       workspace.xml
+|       
++---.mvn
+|   \---wrapper
+|           maven-wrapper.jar
+|           maven-wrapper.properties
+|           MavenWrapperDownloader.java
+|           
++---src
+|   +---main
+|   |   +---java
+|   |   |   \---com
+|   |   |       \---usa
+|   |   |           \---reto3
+|   |   |               \---reto3
+|   |   |                   |   Reto3Application.java
+|   |   |                   |   
+|   |   |                   +---model
+|   |   |                   |       Category.java
+|   |   |                   |       Client.java
+|   |   |                   |       Message.java
+|   |   |                   |       Quadbike.java
+|   |   |                   |       Reservation.java
+|   |   |                   |       Score.java
+|   |   |                   |       
+|   |   |                   +---repository
+|   |   |                   |   |   CategoryRepository.java
+|   |   |                   |   |   ClientRepository.java
+|   |   |                   |   |   MessageRepository.java
+|   |   |                   |   |   QuadbikeRepositorio.java
+|   |   |                   |   |   ReservationRepository.java
+|   |   |                   |   |   
+|   |   |                   |   \---crud
+|   |   |                   |           InterfaceCategoria.java
+|   |   |                   |           InterfaceCliente.java
+|   |   |                   |           InterfaceMensaje.java
+|   |   |                   |           InterfaceQuadbike.java
+|   |   |                   |           InterfaceReservation.java
+|   |   |                   |           
+|   |   |                   +---service
+|   |   |                   |       ServiceReservation.java
+|   |   |                   |       ServiciosCategoria.java
+|   |   |                   |       ServiciosClient.java
+|   |   |                   |       ServiciosMessage.java
+|   |   |                   |       ServiciosQuadbike.java
+|   |   |                   |       
+|   |   |                   \---web
+|   |   |                           CategoriaWeb.java
+|   |   |                           ClientWeb.java
+|   |   |                           MessageWeb.java
+|   |   |                           QuadbikeWeb.java
+|   |   |                           ReservationWeb.java
+|   |   |                           
+|   |   \---resources
+|   |       |   application.properties
+|   |       |   
+|   |       +---static
+|   |       \---templates
+|   \---test
+|       \---java
+|           \---com
+|               \---usa
+|                   \---reto3
+|                       \---reto3
+|                               Reto3ApplicationTests.java
+|                               
+\---target
+    +---classes
+    |   |   .netbeans_automatic_build
+    |   |   application.properties
+    |   |   
+    |   \---com
+    |       \---usa
+    |           \---reto3
+    |               \---reto3
+    |                   |   Reto3Application.class
+    |                   |   
+    |                   +---model
+    |                   |       Category.class
+    |                   |       Client.class
+    |                   |       Message.class
+    |                   |       Quadbike.class
+    |                   |       Reservation.class
+    |                   |       Score.class
+    |                   |       
+    |                   +---repository
+    |                   |   |   CategoryRepository.class
+    |                   |   |   ClientRepository.class
+    |                   |   |   MessageRepository.class
+    |                   |   |   QuadbikeRepositorio.class
+    |                   |   |   ReservationRepository.class
+    |                   |   |   
+    |                   |   \---crud
+    |                   |           InterfaceCategoria.class
+    |                   |           InterfaceCliente.class
+    |                   |           InterfaceMensaje.class
+    |                   |           InterfaceQuadbike.class
+    |                   |           InterfaceReservation.class
+    |                   |           
+    |                   +---service
+    |                   |       ServiceReservation.class
+    |                   |       ServiciosCategoria.class
+    |                   |       ServiciosClient.class
+    |                   |       ServiciosMessage.class
+    |                   |       ServiciosQuadbike.class
+    |                   |       
+    |                   \---web
+    |                           CategoriaWeb.class
+    |                           ClientWeb.class
+    |                           MessageWeb.class
+    |                           QuadbikeWeb.class
+    |                           ReservationWeb.class
+    |                           
+    +---generated-sources
+    |   \---annotations
+    +---generated-test-sources
+    |   \---test-annotations
+    +---maven-status
+    |   \---maven-compiler-plugin
+    |       +---compile
+    |       |   \---default-compile
+    |       |           createdFiles.lst
+    |       |           inputFiles.lst
+    |       |           
+    |       \---testCompile
+    |           \---default-testCompile
+    |                   createdFiles.lst
+    |                   inputFiles.lst
+    |                   
+    +---surefire-reports
+    |       com.usa.reto3.reto3.Reto3ApplicationTests.txt
+    |       TEST-com.usa.reto3.reto3.Reto3ApplicationTests.xml
+    |       
+    \---test-classes
+        |   .netbeans_automatic_build
+        |   
+        \---com
+            \---usa
+                \---reto3
+                    \---reto3
+                            Reto3ApplicationTests.class
+                            
