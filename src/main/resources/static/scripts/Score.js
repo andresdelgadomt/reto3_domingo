@@ -1,6 +1,6 @@
 function traerInformacionScore(){
     $.ajax({
-        url:"http://localhost:8080/api/Score/all",
+        url:"http://129.151.121.242:8080/api/Score/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -66,7 +66,7 @@ function guardarInformacionScore(){
             dataType: 'JSON',
             data: JSON.stringify(var4),
 
-            url:"http://localhost:8080/api/Score/save",
+            url:"http://129.151.121.242:8080/api/Score/save",
 
 
             success:function(response) {
@@ -96,7 +96,7 @@ function editarInformacionScore(idElemento){
         };
         console.log(myData);
         $.ajax({
-            url:"http://localhost:8080/api/Score/update",
+            url:"http://129.151.121.242:8080/api/Score/update",
             type:"PUT",
             data:JSON.stringify(myData),
             contentType:"application/JSON; charset=utf-8",
@@ -123,7 +123,7 @@ function  borrarElementoScore(idElemento){
     };
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        url:"http://localhost:8080/api/Reservation/"+idElemento,
+        url:"http://129.151.121.242:8080/api/Reservation/"+idElemento,
         type:"DELETE",
         data:dataToSend,
         contentType:"application/JSON",

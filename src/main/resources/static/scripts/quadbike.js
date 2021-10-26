@@ -1,6 +1,6 @@
 function traerInformacionCuatrimotos(){
     $.ajax({
-        url:"http://localhost:8080/api/Quadbike/all",
+        url:"http://129.151.121.242:8080/api/Quadbike/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
