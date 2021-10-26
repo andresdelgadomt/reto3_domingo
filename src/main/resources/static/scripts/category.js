@@ -1,6 +1,6 @@
 function traerInformacionCategorias(){
     $.ajax({
-        url:"http://localhost:8080/api/Category/all",
+        url:"http://129.151.121.242:8080/api/Category/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -48,7 +48,7 @@ function guardarInformacionCategorias(){
             dataType: 'JSON',
             data: JSON.stringify(var2),
 
-            url:"http://localhost:8080/api/Category/save",
+            url:"http://129.151.121.242:8080/api/Category/save",
 
 
             success:function(response) {
@@ -83,7 +83,7 @@ function editarInformacionCategorias(idElemento){
         console.log(myData);
         let dataToSend=JSON.stringify(myData);
         $.ajax({
-            url:"http://localhost:8080/api/Category/update",
+            url:"http://129.151.121.242:8080/api/Category/update",
             type:"PUT",
             data:dataToSend,
             contentType:"application/JSON",
@@ -105,7 +105,7 @@ function  borrarElementoCategoria(idElemento){
         id:idElemento
     };
     $.ajax({
-        url:"http://localhost:8080/api/Category/"+idElemento,
+        url:"http://129.151.121.242:8080/api/Category/"+idElemento,
         type:"DELETE",
         data:JSON.stringify(myData),
         contentType:"application/JSON",

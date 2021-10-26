@@ -1,6 +1,6 @@
 function traerInformacionReservation(){
     $.ajax({
-        url:"http://localhost:8080/api/Reservation/all",
+        url:"http://129.151.121.242:8080/api/Reservation/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -45,7 +45,7 @@ function pintarRespuestaReservation(respuesta){
 }
 function autoInicioClient(){
     $.ajax({
-        url:"http://localhost:8080/api/Client/all",
+        url:"http://129.151.121.242:8080/api/Client/all",
         type:"GET",
         datatype:"json",
         success:function(json){
@@ -62,7 +62,7 @@ function autoInicioClient(){
 }
 function autoInicioQuadbike(){
     $.ajax({
-        url:"http://localhost:8080/api/Quadbike/all",
+        url:"http://129.151.121.242:8080/api/Quadbike/all",
         type:"GET",
         datatype:"json",
         success:function(json){
@@ -94,7 +94,7 @@ function guardarInformacionReservation(){
             dataType: 'JSON',
             data: JSON.stringify(var4),
 
-            url:"http://localhost:8080/api/Reservation/save",
+            url:"http://129.151.121.242:8080/api/Reservation/save",
 
 
             success:function(response) {
@@ -125,7 +125,7 @@ function editarInformacionReservation(idElemento){
         };
         console.log(myData);
         $.ajax({
-            url:"http://localhost:8080/api/Reservation/update",
+            url:"http://129.151.121.242:8080/api/Reservation/update",
             type:"PUT",
             data:JSON.stringify(myData),
             contentType:"application/JSON; charset=utf-8",
@@ -151,7 +151,7 @@ function  borrarElementoReservation(idElemento){
     };
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        url:"http://localhost:8080/api/Reservation/"+idElemento,
+        url:"http://129.151.121.242:8080/api/Reservation/"+idElemento,
         type:"DELETE",
         data:dataToSend,
         contentType:"application/JSON",

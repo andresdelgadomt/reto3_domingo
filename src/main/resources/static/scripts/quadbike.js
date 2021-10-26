@@ -38,7 +38,7 @@ function pintarRespuestaBikes(respuesta){
 }
 function autoInicio(){
     $.ajax({
-        url:"http://localhost:8080/api/Category/all",
+        url:"http://129.151.121.242:8080/api/Category/all",
         type:"GET",
         datatype:"json",
         success:function(json){
@@ -71,7 +71,7 @@ function guardarInformacionCuatrimoto(){
             dataType: 'JSON',
             data: JSON.stringify(var3),
 
-            url:"http://localhost:8080/api/Quadbike/save",
+            url:"http://129.151.121.242:8080/api/Quadbike/save",
 
 
             success:function(response) {
@@ -109,7 +109,7 @@ function editarInformacionCuatrimoto(idElemento){
         console.log(myData);
         let dataToSend=JSON.stringify(myData);
         $.ajax({
-            url:"http://localhost:8080/api/Quadbike/update",
+            url:"http://129.151.121.242:8080/api/Quadbike/update",
             type:"PUT",
             data:dataToSend,
             contentType:"application/JSON",
@@ -133,7 +133,7 @@ function  borrarElementoCuatrimoto(idElemento){
         id:idElemento
     };
     $.ajax({
-        url:"http://localhost:8080/api/Quadbike/"+idElemento,
+        url:"http://129.151.121.242:8080/api/Quadbike/"+idElemento,
         type:"DELETE",
         data:JSON.stringify(myData),
         contentType:"application/JSON",

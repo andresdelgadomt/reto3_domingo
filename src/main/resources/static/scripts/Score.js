@@ -36,7 +36,7 @@ function pintarRespuestaScore(respuesta){
 }
 function autoInicio(){
     $.ajax({
-        url:"http://localhost:8080/api/Reservation/all",
+        url:"http://129.151.121.242:8080/api/Reservation/all",
         type:"GET",
         datatype:"json",
         success:function(json){
