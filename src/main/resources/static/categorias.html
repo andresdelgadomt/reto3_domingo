@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/category.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        .fondo{
+            opacity: 0.9;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+            height: 400px;
+            background-image: url("images/fondo_rojo.jpg");
+            background-position: center center;
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        button{
+            border: 1px solid black;
+            border-style: outset;
+            height: 50px;
+            width: 200px;
+        }
+        input{
+            border: 2px solid red;
+            border-radius: 8px;
+            height: 50px;
+            width: 400px;
+        }
+        .regresar{
+            font-size: 30px;
+            border: 2px solid rgb(40, 82, 83);
+            border-radius: 8px;
+        }
+        a{
+            outline: none;
+            text-decoration: none;
+            padding: 2px 1px 0;
+        }
+        a:visited {
+            color: #0f110e;
+        }
+    </style>
+
+</head>
+<body class="fondo">
+
+<div class="jumbotron text-center">
+    <h1> CUATRIMOTOS</h1>
+</div>
+<center>
+    <div class = "contenedor">
+        <h1> Categorias</h1>
+        <div id="resultadoCategorias"></div>
+        <button onclick="traerInformacionCategorias()"> Consultar Categorias</button>
+        <div>
+            <h3>nombre</h3>
+            <input type="text" id="Cname" placeholder="name">
+            <h3>descripcion</h3>
+            <input type="text" id="Cdescription" placeholder="description">
+        </div>
+        <br>
+        <button onclick="guardarInformacionCategorias()">Guardar Categorias</button>
+        <br>
+        <br>
+    </div>
+    <a href="index.html"><label class="regresar">Regresar al inicio</label></a>
+</center>
+
+
+</body>
+</html>

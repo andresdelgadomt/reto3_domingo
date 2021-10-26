@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/Score.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .fondo{
+            opacity: 0.9;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+            height: 400px;
+            background-image: url("images/fondo_rojo.jpg");
+            background-position: center center;
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        button{
+            border: 1px solid black;
+            border-style: outset;
+            height: 50px;
+            width: 200px;
+        }
+        input{
+            border: 2px solid red;
+            border-radius: 8px;
+            height: 50px;
+            width: 400px;
+        }
+        .regresar{
+            font-size: 30px;
+            border: 2px solid rgb(40, 82, 83);
+            border-radius: 8px;
+        }
+        a{
+            outline: none;
+            text-decoration: none;
+            padding: 2px 1px 0;
+        }
+        a:visited {
+            color: #0f110e;
+        }
+    </style>
+</head>
+<body class = "fondo">
+<div class="jumbotron text-center">
+    <h1> Cuatrimoto</h1>
+</div>
+<center>
+    <h1> Calificacion reservas</h1>
+    <div id="resultadoScore"></div>
+    <button onclick="traerInformacionScore()"> Consultar Calificaciones</button>
+    <h3>Calificacion</h3>
+    <select id="select-Calificacion">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <h3> Mensaje</h3>
+    <input type=text id="comentario" placeholder="comentario">
+    <h3> Reserva</h3>
+    <select id="select-reservacion"></select>
+    <br>
+    <button onclick="guardarInformacionScore()">Guardar Mensajes</button>
+    <br>
+    <br>
+    <a href="index.html"><label class="regresar">Regresar al inicio</label></a>
+    <br>
+    <a href="Reservacion.html"><label class="regresar">Regresar a crear reservacion</label></a>
+    <br>
+</center>
+
+<script type="text/javascript">
+    window.onload = autoInicio();
+</script>
+</body>
+</html>

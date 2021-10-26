@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/reservation.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .fondo{
+            opacity: 0.9;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+            height: 400px;
+            background-image: url("images/triangle.jpg");
+            background-position: center center;
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        button{
+            border: 1px solid black;
+            border-style: outset;
+            height: 50px;
+            width: 200px;
+        }
+        input{
+            border: 2px solid red;
+            border-radius: 8px;
+            height: 50px;
+            width: 400px;
+        }
+        .regresar{
+            font-size: 30px;
+            border: 2px solid rgb(40, 82, 83);
+            border-radius: 8px;
+        }
+        a{
+            outline: none;
+            text-decoration: none;
+            padding: 2px 1px 0;
+        }
+        a:visited {
+            color: #0f110e;
+        }
+    </style>
+</head>
+<body class="fondo">
+
+<div class="jumbotron text-center">
+    <h1> CUATRIMOTOS</h1>
+</div>
+<center>
+    <div class = "contenedor">
+        <h1> Reservación</h1>
+        <div id="resultadoReservation"></div>
+        <button onclick="traerInformacionReservation()"> Consultar reservacion</button>
+        <div>
+            <h3>Fecha de inicio</h3>
+            <input type="date" id="startDate" placeholder="date">
+            <h3>Fecha de entrega</h3>
+            <input type="date" id="devolutionDate" placeholder="date">
+            <h3>cuatrimoto</h3>
+            <select id="select-cuatrimoto"></select>
+            <h3>Cliente</h3>
+            <select id="select-cliente"></select>
+        </div>
+        <br>
+        <button onclick="guardarInformacionReservation()">Guardar reservacion</button>
+        <br>
+        <br>
+    </div>
+    <a href="index.html"><label class="regresar">regresar al incio</label></a>
+    <br>
+    <br>
+    <a href="Calificacionreserva.html"><label class="regresar">Calificar reservacion</label></a>
+</center>
+<script type="text/javascript">
+    window.onload = autoInicioClient();
+    window.onload = autoInicioQuadbike();
+</script>
+</body>
+</html>

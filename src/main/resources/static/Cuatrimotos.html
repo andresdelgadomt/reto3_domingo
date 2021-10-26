@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/quadbike.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .fondo{
+            opacity: 0.9;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+            height: 400px;
+            background-image: url("images/fonno-rojo.jpg");
+            background-position: center center;
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        button{
+            border: 1px solid black;
+            border-style: outset;
+            height: 50px;
+            width: 200px;
+        }
+        input{
+            border: 2px solid red;
+            border-radius: 8px;
+            height: 50px;
+            width: 400px;
+        }
+        .regresar{
+            font-size: 30px;
+            border: 2px solid black;
+            border-radius: 8px;
+        }
+        a{
+            outline: none;
+            text-decoration: none;
+            padding: 2px 1px 0;
+        }
+        a:visited {
+            color: #0f110e;
+        }
+    </style>
+</head>
+<body class="fondo">
+<div class="jumbotron text-center">
+    <h1> CUATRIMOTOS</h1>
+</div>
+<div class = "contenedor">
+    <center>
+        <h1> Quadbikes</h1>
+        <div id="resultadoCuatrimoto"></div>
+        <button onclick="traerInformacionCuatrimotos()" > Consultar Quadbikes</button>
+
+        <div>
+            <h3>nombre</h3>
+            <input type="text" id="Qname" placeholder="name">
+            <br>
+            <br>
+            <h3>marca</h3>
+            <input type="text" id="Qbrand" placeholder="modelo">
+            <br>
+            <br>
+            <h3>año</h3>
+            <input type="number" id="Qyear" placeholder="year">
+            <br>
+            <br>
+            <h3>descripcion</h3>
+            <br>
+            <input type="text" id="Qdescription" placeholder="description">
+            <br>
+            <br>
+            <h3>Categoria</h3>
+            <br>
+            <select id="select-category"></select>
+            <br>
+            <br>
+        </div>
+        <br>
+        <button onclick="guardarInformacionCuatrimoto()">Guardar Quadbikes</button>
+        <br>
+        <br>
+        <a href="index.html"><label class="regresar">regresar al incio</label></a>
+    </center>
+
+</div>
+<script type="text/javascript">
+
+    window.onload = autoInicio();
+</script>
+</body>
+
+</html>
