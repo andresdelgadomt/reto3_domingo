@@ -1,6 +1,7 @@
 
 package com.usa.reto3.reto3.repository;
 
+import com.usa.reto3.reto3.model.Client;
 import com.usa.reto3.reto3.model.Reservation;
 import com.usa.reto3.reto3.model.custom.CountClient;
 import com.usa.reto3.reto3.repository.crud.InterfaceReservation;
@@ -48,7 +49,7 @@ public class ReservationRepository {
 
     List<Object[]> report =reservationCrudRepository.countTotalReservationByClient();
         for(int i=0; i<report.size();i++){
-            Reservation reser=(Reservation) report.get(i)[0];
+            Client reser=(Client) report.get(i)[0];
             Long cantidad=(Long) report.get(i)[1];
             CountClient cc=new CountClient(cantidad,reser);
             res.add(cc);

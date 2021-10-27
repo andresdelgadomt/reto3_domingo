@@ -1,5 +1,6 @@
 package com.usa.reto3.reto3.model.custom;
 
+import com.usa.reto3.reto3.model.Client;
 import com.usa.reto3.reto3.model.Reservation;
 
 public class CountClient {
@@ -7,7 +8,7 @@ public class CountClient {
 	private Reservation reservation;
 
 
-	public CountClient(Long total, Reservation reservation){
+	public CountClient(Long total, Client reservation){
 	this.total = total;
 	this.reservation = reservation;
 	}
