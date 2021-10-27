@@ -5,6 +5,8 @@
 package com.usa.reto3.reto3.web;
 
 import com.usa.reto3.reto3.model.Reservation;
+import com.usa.reto3.reto3.model.custom.CountClient;
+import com.usa.reto3.reto3.model.custom.StatusAmount;
 import com.usa.reto3.reto3.service.ServiceReservation;
 import java.util.List;
 import java.util.Optional;
@@ -56,5 +58,24 @@ public class ReservationWeb {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public boolean delete(@PathVariable("id") int reservationId) {
         return reservationService.deleteReservation(reservationId);
+    }
+
+
+    //RETO 5
+
+    @GetMapping("/report-status")
+    public StatusAmount getReservationStatus(){
+        return reservationService.getStatusReport();
+    }
+
+
+    @GetMapping("/report-client")
+        public List<CountClient> getCountClient(){
+            return reservationService.getTopClient();
+    }
+
+    @GetMapping("/report-dates/{dateOne}/date{Two}")
+    public List<Reservation> getDatesReport(@PathVariable("dateOne") String d1,@PathVariable("dateTwo") String d2){
+        return reservationService.getReservationPeriod(d1,d2);
     }
 }
