@@ -69,12 +69,12 @@ public class ReservationWeb {
     }
 
 
-    @GetMapping("/report-client")
+    @GetMapping("/report-clients")
         public List<CountClient> getCountClient(){
             return reservationService.getTopClient();
     }
 
-    @GetMapping("/report-dates/{dateOne}/date{Two}")
+    @GetMapping("/report-dates/{dateOne}/{dateTwo}")
     public List<Reservation> getDatesReport(@PathVariable("dateOne") String d1,@PathVariable("dateTwo") String d2){
         return reservationService.getReservationPeriod(d1,d2);
     }
